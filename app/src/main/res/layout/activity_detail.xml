@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/exist"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Details:"
+        android:textSize="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="100dp"
+        android:inputType="textPersonName|textCapWords"
+        android:text="UserName: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:ems="8"
+        android:hint="Enter Your Name" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginTop="300dp"
+        android:inputType="phone"
+        android:text="Mobile No.: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editmobile"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mobile"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:ems="8"
+        android:hint="Enter Your Mobile No."
+        android:imeOptions="actionNext" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginTop="200dp"
+        android:text="Email-Id: "
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:ems="8"
+        android:hint="Enter Your Email-Id"
+        android:imeOptions="actionNext" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginBottom="400dp"
+        android:inputType="textPostalAddress"
+        android:text="Address: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:ems="8"
+        android:hint="Enter Your Address"
+        android:imeOptions="actionDone" />
+
+
+</RelativeLayout>
