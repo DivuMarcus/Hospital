@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#ffffff"
+    android:background="#A5E7F5"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignTop="@+id/doctor"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-100dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="WELCOME"
+        android:textColor="#36BAD5"
+        android:textSize="50sp" />
     <ImageView
-        android:layout_width="82dp"
-        android:layout_height="160dp"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
         android:minWidth="0dp"
         android:minHeight="0dp"
-        android:background="@drawable/doctor-symbol"
+        android:background="@drawable/doctor2"
+        android:id="@+id/doctor"
         android:layout_centerInParent="true"/>
 </RelativeLayout>
