@@ -21,7 +21,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:inputType="textPersonName|textCapWords"
         android:text="UserName: "
         android:textSize="20sp" />
@@ -45,7 +45,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/name"
         android:layout_alignLeft="@+id/name"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         android:inputType="phone"
         android:text="Mobile No.: "
         android:textSize="20sp" />
@@ -70,7 +70,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/name"
         android:layout_alignLeft="@+id/name"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="250dp"
         android:text="Email-Id: "
         android:inputType="textEmailAddress"
         android:textSize="20sp" />
@@ -92,12 +92,12 @@
         android:id="@+id/address"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/name"
         android:layout_alignLeft="@+id/name"
-        android:layout_marginBottom="400dp"
-        android:inputType="textPostalAddress"
+        android:layout_marginTop="450dp"
         android:text="Address: "
+        android:inputType="textPostalAddress"
         android:textSize="20sp" />
 
     <EditText
@@ -112,6 +112,12 @@
         android:ems="8"
         android:hint="Enter Your Address"
         android:imeOptions="actionDone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_alignBottom="@id/address" />
 
 
 </RelativeLayout>
