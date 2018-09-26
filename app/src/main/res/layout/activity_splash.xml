@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#D4EDED"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#D4EDED">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,17 +10,18 @@
         android:layout_alignTop="@+id/doctor"
         android:layout_centerInParent="true"
         android:layout_marginTop="-100dp"
-        android:textStyle="bold"
         android:fontFamily="sans-serif"
         android:text="WELCOME"
         android:textColor="#36BAD5"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
     <ImageView
+        android:id="@+id/doctor"
         android:layout_width="300dp"
         android:layout_height="320dp"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
+        android:layout_centerInParent="true"
         android:background="@drawable/doctor2"
-        android:id="@+id/doctor"
-        android:layout_centerInParent="true"/>
+        android:minHeight="0dp"
+        android:minWidth="0dp" />
 </RelativeLayout>

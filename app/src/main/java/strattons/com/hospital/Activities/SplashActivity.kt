@@ -1,4 +1,4 @@
-package strattons.com.hospital
+package strattons.com.hospital.Activities
 
 import android.Manifest
 import android.content.Context
@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v4.app.ActivityCompat
 import android.widget.Toast
+import strattons.com.hospital.R
 
 class SplashActivity : AppCompatActivity() {
 
