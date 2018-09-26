@@ -21,7 +21,7 @@ class UserDatabase : SQLiteOpenHelper {
     override fun onCreate(sqlitedatabase: SQLiteDatabase?) {
         sqlitedatabase?.execSQL("CREATE TABLE " + staticated.TABLE_NAME + "( " + staticated.USER_ID + "STRING PRIMARY KEY," +
                 staticated.EMAIL_ID + " STRING" + staticated.MOBILENO + " INTEGER" + staticated.ADDRESS + "STRING" + staticated.PASSWORD +
-                "String");
+                "STRING");
     }
 
     override fun onUpgrade(sqlitedatabase: SQLiteDatabase?, p1: Int, p2: Int) {

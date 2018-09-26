@@ -3,14 +3,15 @@
     android:id="@+id/exist"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EBF2FA">
+    android:background="#413E4F">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="17dp"
-        android:text="User Details:"
+        android:layout_above="@+id/editname"
+        android:layout_centerHorizontal="true"
+        android:text="User Details"
+        android:textColor="@color/colorText"
         android:textSize="50sp" />
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="100dp"
         android:text="UserName: "
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <EditText
@@ -34,6 +35,8 @@
         android:layout_alignBaseline="@+id/name"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:ems="8"
@@ -49,7 +52,7 @@
         android:layout_alignStart="@+id/name"
         android:layout_marginTop="260dp"
         android:text="Mobile No.: "
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <EditText
@@ -57,6 +60,8 @@
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/mobile"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"
         android:layout_alignLeft="@+id/editname"
         android:layout_alignStart="@+id/editname"
         android:ems="8"
@@ -73,7 +78,7 @@
         android:layout_alignStart="@+id/name"
         android:layout_marginTop="180dp"
         android:text="Email-Id: "
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <EditText
@@ -82,6 +87,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/email"
         android:layout_alignLeft="@+id/editname"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"
         android:layout_alignStart="@+id/editname"
         android:ems="8"
         android:hint="Enter Your Email-Id"
@@ -97,7 +104,7 @@
         android:layout_alignStart="@+id/name"
         android:layout_marginTop="340dp"
         android:text="Address: "
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <EditText
@@ -109,7 +116,9 @@
         android:layout_alignStart="@+id/editname"
         android:ems="8"
         android:hint="Enter Your Address"
-        android:imeOptions="actionDone"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"
+        android:imeOptions="actionNext"
         android:inputType="textPostalAddress" />
 
     <TextView
@@ -123,21 +132,23 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="400dp"
         android:text="Password: "
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editpassword"
-        android:layout_width="215dp"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/password"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
         android:ems="8"
-        android:hint="Enter Password"
-        android:inputType="textPassword" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorTextHint" />
 
     <TextView
         android:id="@+id/retypepassword"
@@ -149,22 +160,24 @@
         android:layout_marginLeft="17dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="460dp"
-        android:text="Retype Password: "
-        android:textColor="#000000"
+        android:text=" Password: "
+        android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editretype"
-        android:layout_width="215dp"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/retypepassword"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
         android:ems="8"
-        android:hint="Retype Your Password"
-        android:inputType="textPassword" />
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorTextHint" />
 
     <RelativeLayout
         android:id="@+id/showhideButton"
@@ -180,6 +193,9 @@
             android:layout_height="31dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             android:background="@drawable/ic_custom_show" />
 
     </RelativeLayout>
@@ -188,8 +204,9 @@
         android:id="@+id/submitbutton"
         android:layout_width="150dp"
         android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/shape"
         android:text="Submit"
         android:textSize="21sp" />
