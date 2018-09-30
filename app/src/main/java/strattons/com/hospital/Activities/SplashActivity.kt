@@ -23,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this@SplashActivity, permissionString, 831)
         } else {
             Handler().postDelayed({
-                val startAct = Intent(this@SplashActivity, MainActivity::class.java)
+                val startAct = Intent(this@SplashActivity, LoginActivity::class.java)
                 startActivity(startAct)
                 this.finish()
             }, 1000)
@@ -36,7 +36,7 @@ class SplashActivity : AppCompatActivity() {
             831 -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     Handler().postDelayed({
-                        val startAct = Intent(this@SplashActivity, MainActivity::class.java)
+                        val startAct = Intent(this@SplashActivity, LoginActivity::class.java)
                         startActivity(startAct)
                         this.finish()
                     }, 1000)

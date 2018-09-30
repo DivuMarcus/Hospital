@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "570403186654-2rv4b98sl2ncpuis4u5n2kr9pucq99eu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "strattons.com.hospital",
+            "certificate_hash": "9764c60ee8007469e1b23f39e894ae56a291a2c3"
+          }
+        },
+        {
           "client_id": "570403186654-efhpsnru60qllbc610s3h88oi850e0og.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570403186654-efhpsnru60qllbc610s3h88oi850e0og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

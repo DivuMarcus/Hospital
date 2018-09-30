@@ -1,215 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/exist"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#413E4F">
+    android:background="@color/colorBackground"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editname"
-        android:layout_centerHorizontal="true"
-        android:text="User Details"
-        android:textColor="@color/colorText"
-        android:textSize="50sp" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="100dp"
-        android:text="UserName: "
-        android:textColor="@color/colorText"
-        android:textSize="20sp" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/editname"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/name"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:textColorHint="@color/colorTextHint"
-        android:textColor="@color/colorText"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:ems="8"
-        android:hint="Enter Your Name"
-        android:inputType="textPersonName|textCapWords" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutName"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
 
-    <TextView
-        android:id="@+id/mobile"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/name"
-        android:layout_marginTop="260dp"
-        android:text="Mobile No.: "
-        android:textColor="@color/colorText"
-        android:textSize="20sp" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editmobile"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/mobile"
-        android:textColorHint="@color/colorTextHint"
-        android:textColor="@color/colorText"
-        android:layout_alignLeft="@+id/editname"
-        android:layout_alignStart="@+id/editname"
-        android:ems="8"
-        android:hint="Enter Your Mobile No."
-        android:imeOptions="actionNext"
-        android:inputType="phone" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/name"
-        android:layout_marginTop="180dp"
-        android:text="Email-Id: "
-        android:textColor="@color/colorText"
-        android:textSize="20sp" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editemail"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/email"
-        android:layout_alignLeft="@+id/editname"
-        android:textColorHint="@color/colorTextHint"
-        android:textColor="@color/colorText"
-        android:layout_alignStart="@+id/editname"
-        android:ems="8"
-        android:hint="Enter Your Email-Id"
-        android:imeOptions="actionNext"
-        android:inputType="textEmailAddress" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutmobile"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
-    <TextView
-        android:id="@+id/address"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/name"
-        android:layout_marginTop="340dp"
-        android:text="Address: "
-        android:textColor="@color/colorText"
-        android:textSize="20sp" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_mobile"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editaddress"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/address"
-        android:layout_alignLeft="@+id/editname"
-        android:layout_alignStart="@+id/editname"
-        android:ems="8"
-        android:hint="Enter Your Address"
-        android:textColorHint="@color/colorTextHint"
-        android:textColor="@color/colorText"
-        android:imeOptions="actionNext"
-        android:inputType="textPostalAddress" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutAddress"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
-    <TextView
-        android:id="@+id/password"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="400dp"
-        android:text="Password: "
-        android:textColor="@color/colorText"
-        android:textSize="20sp" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_address"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editpassword"
-        android:layout_width="194dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/password"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:ems="8"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorTextHint" />
-
-    <TextView
-        android:id="@+id/retypepassword"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="460dp"
-        android:text=" Password: "
-        android:textColor="@color/colorText"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/editretype"
-        android:layout_width="194dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/retypepassword"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:ems="8"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorTextHint" />
-
-    <RelativeLayout
-        android:id="@+id/showhideButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/password">
-
-        <Button
-            android:id="@+id/eye1"
-            android:layout_width="31dp"
-            android:layout_height="31dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/ic_custom_show" />
-
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/submitbutton"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="88dp"
-        android:background="@drawable/shape"
-        android:text="Submit"
-        android:textSize="21sp" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
 
 
-</RelativeLayout>
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutConfirmPassword"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_confirm_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorTextHint"
+            android:text="@string/text_register" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextViewLoginLink"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Already a member? Login"
+            android:textSize="16dp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>
