@@ -48,7 +48,7 @@ class SplashActivity : AppCompatActivity() {
                 return
             }
             else -> {
-                Toast.makeText(this@SplashActivity, "Something Went Wrong", Toast.LENGTH_SHORT)
+                Toast.makeText(this@SplashActivity, "Something Went Wrong, Try Again", Toast.LENGTH_SHORT)
                 this.finish()
                 return
             }

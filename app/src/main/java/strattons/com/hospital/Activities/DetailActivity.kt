@@ -85,13 +85,13 @@ class DetailActivity : AppCompatActivity() {
                     } else {
                         startActivity(Intent(this, LoginActivity::class.java))
                     }
-                    Toast.makeText(this, "Successfully Registered", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "The user is Successfully Registered", Toast.LENGTH_LONG).show()
                 } else {
-                    Toast.makeText(this, "Error Registering, Try Again", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Error Registeringthe attempting user, Try Again", Toast.LENGTH_LONG).show()
                 }
             })
         } else {
-            Toast.makeText(this, "Please Fill Up the Credentials", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Please Fill Up the Appropriate Credentials", Toast.LENGTH_LONG).show()
         }
 
 

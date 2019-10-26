@@ -40,14 +40,14 @@ var mAuth=FirebaseAuth.getInstance()
             this.mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this,{ task->
                 if (task.isSuccessful) {
                     startActivity(Intent(this, checkActivity::class.java))
-                    Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Successfully Logged in, Welcome User", Toast.LENGTH_LONG).show()
                 } else {
-                    Toast.makeText(this, "Error Logging in", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Error Logging in, Please Retry", Toast.LENGTH_SHORT).show()
                 }
             })
 
         }else {
-            Toast.makeText(this, "Please fill up the Credentials", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Please fill up the Credentials Correctly", Toast.LENGTH_SHORT).show()
         }
     }
 
